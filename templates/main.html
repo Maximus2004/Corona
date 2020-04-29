@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corona</title>
+</head>
+<body>
+    {% block content %}
+        <form action="" method="get">
+            {{ form.as_p }}
+            <input type="submit" value="Search">
+        </form>
+        {% for frase in frases %}
+            <p>{{ frase }}</p>
+        {% endfor %}
+        <p>{{ chislo }}%</p>
+    {% endblock %}
+</body>
+</html>
